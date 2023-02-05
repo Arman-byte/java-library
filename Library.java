@@ -54,8 +54,6 @@ public void returnPublication(String title){
     while (l <= r) {
         int m = l + (r - l) / 2;
     
-        // Check if x is present at mid
-        //If this doesn't work I do (listOfPublications.get(m) == listOfPublications.get(m).getTitle()))
         int k = title.compareTo(listOfPublications.get(m).getTitle());
         if (listOfPublications.get(m).getTitle().equals(title))
            listOfPublications.get(m).setCheckedOut(false);
